@@ -990,18 +990,8 @@ static void status_icon_update(gboolean mute, gboolean ignore_cache)
 	}
 }
 
-static void icon_theme_on_changed(GtkIconTheme *icon_theme, gpointer user_data)
-{
-	status_icon_update(m_mute, TRUE);
-}
-
 static void status_icon_setup(gboolean mute)
 {
-	GtkIconTheme *icon_theme = gtk_icon_theme_get_default();
-
-	g_signal_connect(G_OBJECT(icon_theme), "changed",
-	                 G_CALLBACK(icon_theme_on_changed), NULL);
-
 	m_status_icon = gtk_status_icon_new();
 	g_signal_connect(G_OBJECT(m_status_icon), "button_press_event",
 	                 G_CALLBACK(status_icon_on_button_press), NULL);
