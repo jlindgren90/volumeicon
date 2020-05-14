@@ -53,7 +53,6 @@ void config_set_middle_mouse_mute(gboolean active);
 // Layout
 void config_set_use_horizontal_slider(gboolean active);
 void config_set_show_sound_level(gboolean active);
-void config_set_use_transparent_background(gboolean active);
 
 // Hotkeys
 void config_set_hotkey_up_enabled(gboolean enabled);
@@ -93,7 +92,6 @@ gboolean config_get_middle_mouse_mute(void);
 // Layout
 gboolean config_get_use_horizontal_slider(void);
 gboolean config_get_show_sound_level(void);
-gboolean config_get_use_transparent_background(void);
 
 // Hotkeys
 gboolean config_get_hotkey_up_enabled(void);
