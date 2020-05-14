@@ -43,6 +43,10 @@ po/stamp-it
 po/*.gmo
 src/.deps
 
+# makepkg
+pkg/
+*.pkg.*
+
 # Miscellaneous
 config.log
 config.status
