@@ -1,7 +1,7 @@
 # Maintainer: John Lindgren <john@jlindgren.net>
 
 pkgname=volumeicon-gtk2
-pkgver=0.5+git
+pkgver=0.5.1+git
 pkgrel=1
 pkgdesc='Volume control for your system tray (GTK2 version)'
 arch=('x86_64')
